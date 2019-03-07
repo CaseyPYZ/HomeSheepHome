@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HomeSheepHome - Documentation</title>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" href="css/style-documentation.css">
+	<script src="../p5/p5.js"></script>
+	<script src="../p5/addons/p5.dom.js"></script>
+	<script src="../p5/addons/p5.sound.js"></script>
+</head>
+<body>
+	<div id="cnvDiv"></div>
+
+	<div id="starter">
+		<img src="img/Sheep-starter.svg" width="50" height="50">
+	</div>
+
+
+	<div id='title'>
+		a brief documentation
+	</div>
+
+	<!--artworks-->
+  <div class="subtitles">artworks</div>
+  <div class="sepLine">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
+
+  <div class="blockText" id="artworks">
+
+		<p>Artworks are a crucial part of this game's overall experience. As specified in earlier proposal, this game's
+      artwork style would be black & white, doodle-like and fun. After taking all requirements into consideration, I
+      decided to hand draw all artworks myself, for sake of a consistent artwork style and a promising gaming
+      experience.</p>
+
+		<p>Hand drawing game artworks is a long process involving a lot of delicate and repeating work, given that I
+      want the main characters -- the three Sheep, to be animated when moving and jumping. In order to loop and form
+			a GIF-like illusion through p5, I will need multiple frames for each of the Sheep's movement. With 8 frames
+			for each Sheep, including 2 standing frames, 4 running frames and 2 jumping frames, this gives 24 unique frams
+			for each Sheep. The whole process would be hand drawing everything on paper, scan & crop each frame into its
+			individual png image, then process every image in Photoshop to remove its white background and unify their
+			sizes. After these procedures, all images will become GIF frames ready for use.</p>
+
+	</div>
+
+  <!--picture of sketchs on sketch book-->
+  <div class="singleImg"><img src="img/sketches.png" width="100%"></div>
+  <div class="footnotes">Part of my sketches on sketch book </div>
+
+
+	<div class="blockText" id="artworks">
+  <p>Other than the Sheep buddies, other element tiles in the game will also be hand-drawn. For instance, different
+    kinds of solid and non-solid tiles, movable items, and background decorations.</p>
+
+		<!--screenshot of artworks in png format-->
+	  <div class="singleImg"><img src="img/sheep_png.png" width="100%"></div>
+	  <div class="footnotes">Sheep frames in PNG format waiting to be processed in Photoshop</div>
+
+		<!--screenshot of tiles in png format-->
+		<div class="singleImg"><img src="img/tiles.png" width="100%"></div>
+		<div class="footnotes">Game tiles in png format used for use</div>
+
+	</div>
+
+
+	<!--game framework-->
+  <div class="subtitles">game framework</div>
+  <div class="sepLine">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
+  <div class="blockText" id="framework">
+    <p>For the framework of this game project, I designed a linear level structure, each level followed by a scoring
+      page and then the next level.</p>
+    <p>Currently during the first phase, I built 3 test levels using a JSON data file for level maps to test the game's
+      level-changing mechanism. Ideally, when all three Sheep have reached the right end of the screen, the game program
+      will extract & update its tileMap to the next level's map, then the canvas will refresh to show a new level. For
+      testing purpose, I used 3 different tiles to build test maps: 0 - white non-solid tile, 1 - balck solid tile, 3 -
+      yellow non-solid trigger tile. Tile 3 is places at the right end of the path designed for the Sheep buddies. When
+      a Sheep has touched the yellow tile with their sensors, its 'trigger' property will be set to 'true'. Once all
+      three Sheep's 'trigger' property is true, the 'changeLevel' function will be triggered and the game will proceed to
+      a new level. Up to this point, this little goal has been accomplished.</p>
+    <p>More details will be nailed along the developing process.</p>
+  </div>
+
+  <div class="vids">
+    <video width="100%" controls>
+      <source src="vid/test-levelChange.mp4" type="video/mp4" />
+        Your browser does not support the video tag :(
+    </video>
+  </div>
+  <div class="footnotes">Level change testing video</div>
+
+  <div class="singleImg"><img src="img/test-levelChange.png" width="100%"></div>
+  <div class="footnotes">Test level - 3</div>
+
+  <div class="blockText" id="framework">
+    <p>Now that we have a functioning level-changing system, the next thing to build would be a scoring system along with pause pages in between different levels showing the user the score they got. This would include further adjustments to the game's framework, and will be the first focus in the following developing process.</p>
+    <p>More details will be posted along the developing process.</p>
+  </div>
+
+
+	<!--level design-->
+  <div class="subtitles">level design</div>
+  <div class="sepLine">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
+  <div class="blockText" id="framework">
+    <p>More details will be posted along the developing process.</p>
+  </div>
+
+
+	<!--'why doesn't this work??' moments-->
+	<div class="subtitles">'why doesn't this work??' moments</div>
+	<div class="sepLine">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
+	<div class="blockText" id="framework">
+		<p>In this section, I will document some of the main technical difficultes I encountered throughout this project, and some things I'd like to specifically point out.</p>
+
+	<div class="subsubs">1 - Sheep on Sheep & big Sheep carry little Sheep</div>
+		<p>It wasn't very hard making the Sheep detect solid and unsolid tiles using sensors and react accordingly, thanks to the tile-based side-view world framework. However, creating one of this game's crucial feature -- letting Sheeps standing on top of each other, and making bigger Sheep able to carry smaller Sheep around, was the most difficult problem I had to solve.</p>
+		<p>In order to make this happen, I went through multiple stages, each stage marked by an error I had either conceptually, logically, or coding-wise.</p>
+		<p>First of all, I set myself to a good start designing a calculating system for my 'Sheep on Sheep' game function. I gave the Sheep object 3 variables: weight, strength and burden. All three of these variables are integers, weight and strength mean what they mean in literal, and "burden" is the weight sum of all (2 at most) other Sheep this Sheep is carrying. Following the logic of a Sheep can only carry something light than itself, we set Sheep's weight and strength to have the same number, Shirley as 3, Shaun as 2 and Timmy as 1. Then, I gave each Sheep an array variable called the "carrying" array, which would include 0~2 integers, each representing a Sheep this Sheep is carrying by its weight. Whether the bottom Sheep can move or not is determined by comparing its burden - the sum of numbers in its "carrying" array, and its strength.</p>
+		<p>After establishing this solid ground, the biggest problem left is to find the right "trigger condition" to 1) make a Sheep stop falling and land on another Sheep'sback, 2) add this Sheep's weight to or delete it from anoher Sheep's "carrying" array. In the first stage, when trying to think of a boolean condition for a Sheep to stand on another Sheep, I had in mind the motion of a Sheep falling form above and landing on another Sheep's back. This led to me designing the mechanism as: when the x coordinate of the top Sheep's bottom sensor is within the range of the bottom Sheep's body length from head to tail, and when its y coordinate is lower than the bottom Sheep's back, the top Sheep should be added to the bottom Sheep's "carrying" array. This is clearly not a good idea, since these conditions would also be met when a Sheeping simply walks up to another sheep and stops at a similar position. After figuring this out, in the second stage, I changed the "trigger condition" to when the top sheep's bottom sensor is in a small flat rectangular shape on the bottom sheep's back. This way, the logic works fine. In the third stage, I worked out the weight-strength-determined "carrying hierarchy" and made sure that smaller Sheeps would be able to move anymore under a bigger sheep. Last but not least, I adjusted the position of the "trigger range" based on each sheep's graphic shape to make the visuals more convincing; then I added "Sheep being in another Sheep's 'carrying' array" as another pre-condition for a sheep to be able to jump, parallel to the Sheep being on a solid ground, so that this sheep on sheep function could finally be complete.</p>
+		<p>This problem was the one that gave me the most trouble, and the one with the most fun for all the entertaining bugs it produced.</p>
+
+	<div class="subsubs">2 - if a Sheep's a big rectangle, it needs 6 sensors</div>
+
+	<p>As part of the core workings of this game's puzzle map the Sheeps have to solve and pass, there must exist small gaps that only Timmy, the smallest Sheep, can pass. And as determined by the nature of tile-base games(or what I'm capable to do with it so far), the smallest gap (unsolid parts of the map) is of width/height of one tile. Therefore, Shirley and Shaun had to be as tall as two tiles, which is twice as tall as a conventional tile-based game character, and this brings a problem. The original sensor system in this game framework places the right & left sensors at half the character's height, and this makes it only detect (with .getTile() method) the lower tile in front of the Sheep, allowing all Sheep to pass despite a higher solid tile that should've blocked Shirley and Timmy. Therefore, I decided to change the original 4-sensor system into a 6-sensor one by making the two bigger Sheeps' right & left side both having 2 sensors, each sensor at a trisection point. This  way, the bigger Sheeps would be blocked from entering a narrow gap as how the game should work. </p>
+
+
+	</div>
+
+
+
+
+
+	<div id="back">
+		<img id='arrow' src="img/arrow-leftA.svg" width="50" height="50" onmouseover="hoverImg()" onmouseout="normalImg()" onclick="backToIndexPage()">
+	</div>
+
+</body>
+
+
+
+	<script type="text/javascript">
+		function hoverImg(){
+			document.getElementById('arrow').src="img/arrow-leftB.svg";
+		}
+
+		function normalImg(){
+			document.getElementById('arrow').src="img/arrow-leftA.svg";
+		}
+
+		function backToIndexPage(){
+			window.location.replace('index.html');
+		}
+
+
+	</script>
+
+
+
+</html>

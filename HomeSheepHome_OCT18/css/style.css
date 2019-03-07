@@ -1,0 +1,91 @@
+body{
+	background-color:rgb(40,40,40);
+	margin:0;
+}
+
+#cnvDiv{
+	padding-top:50px;
+	width:1000px;
+	margin: auto;
+}
+
+#instructions{
+	color:rgb(255,255,255);
+	font-size:14px;
+	width:1000px;
+	margin:auto;
+	margin-top: 0;
+	padding-top:0px;
+	padding-left:0px;
+	padding-bottom:10px;
+	text-align: center;
+}
+
+
+#game{
+	padding-top:30px;
+	margin-bottom:100px;
+	/*width:600px;*/
+	margin: auto;
+}
+
+#arrow_g{
+	position:absolute;
+	top:340px;
+	right:50px;
+}
+
+#arrowGText{
+	position:absolute;
+	top:304px;
+	right:118px;
+	color:rgb(255,255,255);
+	font-size:36px;
+	font-family: 'Indie Flower', cursive;
+}
+
+
+#proposal{
+	padding-top:30px;
+	margin-bottom:100px;
+	/*width:600px;*/
+	margin: auto;
+}
+
+
+#arrow_p{
+	position:absolute;
+	top:520px;
+	right:50px;
+}
+
+#arrowPText{
+	position:absolute;
+	top:484px;
+	right:118px;
+	color:rgb(255,255,255);
+	font-size:36px;
+	font-family: 'Indie Flower', cursive;
+}
+
+#documentation{
+	padding-top:30px;
+	margin-bottom:100px;
+	/*width:600px;*/
+	margin: auto;
+}
+
+#arrow_d{
+	position:absolute;
+	top:430px;
+	right:50px;
+}
+
+#arrowDText{
+	position:absolute;
+	top:394px;
+	right:118px;
+	color:rgb(255,255,255);
+	font-size:36px;
+	font-family: 'Indie Flower', cursive;
+}

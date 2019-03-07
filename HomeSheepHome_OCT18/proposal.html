@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HSH Project Proposal</title>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" href="css/style-proposal.css">
+	<script src="../p5/p5.js"></script>
+	<script src="../p5/addons/p5.dom.js"></script>
+	<script src="../p5/addons/p5.sound.js"></script>
+</head>
+<body>
+	<div id="cnvDiv"></div>
+
+	<div id="starter">
+		<img src="img/sheep-starter.svg" width="50" height="50">
+	</div>
+
+	<div id='title'>
+		a brief intro
+	</div>
+
+	<div id="introduction">
+		<p>For this game project, I choose a game that I personally loved and enjoyed as a kid - <a href="https://www.silvergames.com/en/home-sheep-home">Home Sheep Home</a>.</p>
+
+		<p>This game has a theme story of helping three lost sheep - Shirley, Shaun and Timmy getting back to their home at the barn. The journey is full of barriers and puzzles waiting for the sheep to solve with each of their unique talent - Shirley is heavier and stronger, Shaun is excellent at jumping, and Timmy is tiny enough to go places the other two can't. The user can control any sheep out of the three as needed, switching between them using 1,2,3 on their keyboard, and move them around to find a way for all three sheep to get from the left side to the right side of the screen. Each level get more complicated, and when all levels are completed, everyone will be happily home.</p>
+
+		<p>This game has now been developed into a series, with <a href="https://www.silvergames.com/en/home-sheep-home-2">Home Sheep Home 2</a>, <a href="https://www.silvergames.com/en/home-sheep-home-3">Home Sheep Home 2: Lost in Space</a> and <a href="https://www.silvergames.com/en/home-sheep-home-4">Home Sheep Home 2: Lost Underground</a>, each with its unique theme and settings, yet equally appealing and entertaining. </p>
+
+		<p>In my version of the game, I plan to keep consistent with all artworks used in the series with their doodle-like eye-pleasing style. Other than this, there are two main points that I would like to focus on. The first thing would be building a 'Sheep' class, capable of producing Shirley, Shaun and Timmy each with its unique characteristic. The sheeps' abilities and the physical feedback given by surrounding object in the game will have to be carefully designed. The second thing will be designing levels with problems for the user (the three sheep) to solve. In all, collecting artworks, designing levels and the game's overall structure will be the primary focus of this stage.</p>
+
+		<p>More details will be nailed along the developing process.</p>
+
+		<a href=""></a>
+
+	</div>
+
+	<div id="back">
+		<img id='arrow' src="img/arrow-leftA.svg" width="50" height="50" onmouseover="hoverImg()" onmouseout="normalImg()" onclick="backToIndexPage()">
+	</div>
+
+</body>
+
+	<script type="text/javascript">
+		function hoverImg(){
+			document.getElementById('arrow').src="img/arrow-leftB.svg";
+		}
+
+		function normalImg(){
+			document.getElementById('arrow').src="img/arrow-leftA.svg";
+		}
+
+		function backToIndexPage(){
+			window.location.replace('index.html');
+		}
+
+
+	</script>
+
+
+
+</html>

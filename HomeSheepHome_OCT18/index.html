@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IndexPage</title>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="../p5/p5.js"></script>
+	<script src="../p5/addons/p5.dom.js"></script>
+	<script src="../p5/addons/p5.sound.js"></script>
+</head>
+<body>
+	<div id="game">
+		<img class="arrow" id="arrow_g" src="img/arrow-rightA.svg" width="50" height="50" onmouseover="hoverImgG()" onmouseout="normalImgG()" onclick="toGamePage()">
+		<p id="arrowGText" onclick="toGamePage()">the game</p>
+	</div>
+
+	<div id="proposal">
+		<img class="arrow" id="arrow_p" src="img/arrow-rightA.svg" width="50" height="50" onmouseover="hoverImgP()" onmouseout="normalImgP()" onclick="toProposalPage()">
+		<p id="arrowPText" onclick="toProposalPage()">proposal</p>
+	</div>
+
+
+	<div id="documentation">
+		<img class="arrow" id="arrow_d" src="img/arrow-rightA.svg" width="50" height="50" onmouseover="hoverImgD()" onmouseout="normalImgD()" onclick="toDocumentationPage()">
+		<p id="arrowDText" onclick="toDocumentationPage()" >documentation</p>
+	</div>
+
+</body>
+
+	<script type="text/javascript">
+
+		// game
+		function hoverImgG(){
+			document.getElementById('arrow_g').src="img/arrow-rightB.svg";
+			document.getElementById('arrowGText').style.right='120px';
+		}
+
+		function normalImgG(){
+			document.getElementById('arrow_g').src="img/arrow-rightA.svg";
+			document.getElementById('arrowGText').style.right='118px';
+		}
+
+		function toGamePage(){
+			window.location.replace('home-sheep-home/index.html');
+		}
+
+		// proposal
+		function hoverImgP(){
+			document.getElementById('arrow_p').src="img/arrow-rightB.svg";
+			document.getElementById('arrowPText').style.right='120px';
+		}
+
+		function normalImgP(){
+			document.getElementById('arrow_p').src="img/arrow-rightA.svg";
+			document.getElementById('arrowPText').style.right='118px';
+		}
+
+		function toProposalPage(){
+			window.location.replace('proposal.html');
+		}
+
+		// documentation
+		function hoverImgD(){
+			document.getElementById('arrow_d').src="img/arrow-rightB.svg";
+			document.getElementById('arrowDText').style.right='120px';
+		}
+
+		function normalImgD(){
+			document.getElementById('arrow_d').src="img/arrow-rightA.svg";
+			document.getElementById('arrowDText').style.right='118px';
+		}
+
+		function toDocumentationPage(){
+			window.location.replace('documentation.html');
+		}
+
+	</script>
+
+</html>

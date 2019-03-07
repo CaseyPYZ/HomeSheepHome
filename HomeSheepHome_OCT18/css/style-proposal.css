@@ -1,0 +1,70 @@
+body{
+	background-color:rgb(40,40,40);
+	margin:0;
+}
+
+#cnvDiv{
+	padding-top:50px;
+	width:600px;
+	margin: auto;
+}
+
+#starter{
+	padding-top:80px;
+	width:600px;
+	margin: auto;
+}
+
+#title{
+	color:rgb(250,250,250);
+	font-size:50px;
+	font-family: 'Indie Flower', cursive;
+	width:600px;
+	margin:auto;
+	padding-top:50px;
+	padding-left:0px;
+	padding-bottom:0px;
+	margin-bottom:0;
+}
+
+#introduction{
+	color:rgb(200,200,200);
+	font-size:14px;
+	width:600px;
+	margin:auto;
+	margin-top: 0;
+	padding-top:0px;
+	padding-left:0px;
+	padding-bottom:10px;
+}
+
+.attributes{
+	color:rgb(200,200,200);
+	font-size:6px;
+	width:600px;
+	margin:auto;
+	padding-top:30px;
+	padding-left:0px;
+	padding-bottom:100px;
+}
+
+a:link{
+	text-decoration:none;
+	color:rgb(200,200,200);
+}
+
+a:visited{
+	color:rgb(120,120,120);
+}
+
+a:hover{
+	background-color:rgb(230,230,230);
+	color:rgb(10,10,10);
+}
+
+#back{
+	padding-top:60px;
+	padding-bottom:200px;
+	width:600px;
+	margin: auto;
+}
